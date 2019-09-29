@@ -53,8 +53,6 @@ while(it.hasNext()) {
 }
 ~~~
 
-
-
 * 先得到所有的由key-value组成的set，遍历set的过程中，输出每个元素(key-value)的内容。
 
 ~~~java
