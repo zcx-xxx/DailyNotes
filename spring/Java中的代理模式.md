@@ -92,5 +92,235 @@ public class StaticUserProxy {
 
 ### 3.1 JDK 动态代理
 
+在 spring 中 jdk 动态代理是基于接口的，原理和静态代理类似。
+
+![jdkporexy](img\jdkporexy.png)
+
+#### 3.1.1 例子：
+
+**首先定义自己的要被代理的类及其接口：**
+
+接口：
+
+~~~java
+/**
+ * @Title: PersonInterface.java
+ * 接口
+ */
+package jdkproxy;
+
+public interface PersonInterface {
+	public void eat();
+}
+~~~
+
+具体的实现类：
+
+~~~java
+package jdkproxy;
+
+/**
+ * @ClassName: Person
+ * @Description: 具体的实现类
+ */
+public class Person implements PersonInterface{
+
+	/* (非 Javadoc)
+	 * <p>Title: eat</p>
+	 * <p>Description: </p>
+	 * @see jdkproxy.PersonInterface#eat()
+	 */
+	@Override
+	public void eat() {
+		System.out.println("吃");
+	}
+}
+~~~
+
+**定义代理类，实现 InvocationHandler 接口：**
+
+~~~java
+package jdkproxy;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+
+/**
+ * @ClassName: MyJdkProxy
+ * @Description: 
+ * @author 13071
+ * @date 2019年10月11日
+ *
+ */
+public class MyJdkProxy implements InvocationHandler {
+	private PersonInterface personInterface;
+	/** 
+	 * 创建一个新的实例 MyJdkProxy.
+	 * 传入被代理类的实例化对象，指定哪一个对象调用 invoke 方法
+	 */
+	public MyJdkProxy(PersonInterface personInterface) {
+		this.personInterface = personInterface;
+	}
+
+	/* (非 Javadoc)
+	 * <p>Title: invoke</p>
+	 * <p>Description: </p>
+	 * @param proxy
+	 * @param method
+	 * @param args
+	 * @return
+	 * @throws Throwable
+	 * @see java.lang.reflect.InvocationHandler#invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[])
+	 */
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+		System.out.println("吃饭之前先洗手");
+		
+        //调用 invoke 方法
+		method.invoke(personInterface, args);
+		
+		System.out.println("吃晚饭洗漱睡觉");
+
+		return null;
+	}
+}
+~~~
+
+> invoke 方法的三个参数：
+>
+> * proxy：传入的代理类对象
+> * method：代理类对象要进行扩展的方法。
+> * args：扩展方法需要的参数。
+
+**测试类：**
+
+~~~java
+public class TestProxy {
+	public static void main(String[] args) {
+		PersonInterface person = (PersonInterface) Proxy.newProxyInstance(TestProxy.class.getClassLoader(), new Class[] {PersonInterface.class}, new MyJdkProxy(new Person()));
+		person.eat();
+	}
+}
+~~~
+
+> Proxy.newProxyInstance 的三个参数：
+>
+> * 类加载器：随便一个就行
+> * 被代理类所实现的接口
+> * 代理类的实例化对象
+
+#### 3.1.2 大致原理
+
+* 首先使用类加载器通过传入的接口类信息实例化一个实现了该接口的对象。
+* 该对象中有一个 InvocationHandler 类型的引用，通过传入自己实现的代理对象进行初始化。（即MyJdkProxy）
+* 在 eat() 方法中调用自己定义的代理类中的 invoke 方法。
+
+~~~java
+public class InstancePerson implements PersonInterface{
+	private InvocationHandler invocationHandler;
+	/* (非 Javadoc)
+	 * <p>Title: eat</p>
+	 * <p>Description: </p>
+	 * @see jdkproxy.PersonInterface#eat()
+	 */
+	@Override
+	public void eat() {
+		invocationHandler.invoke(Object xxx, method xxx, Params[] args);
+	}
+}
+~~~
+
 ### 3.2 Cglib 动态代理
+
+#### 3.2.1 介绍
+
+CGLIB(Code Generation Library)是一个开源项目！是一个强大的，高性能，高质量的Code生成类库，它可以在运行期扩展Java类与实现Java接口。Hibernate用它来实现PO(Persistent Object 持久化对象)字节码的动态生成。
+
+CGLIB是一个强大的高性能的代码生成包。它广泛的被许多AOP的框架使用，例如Spring AOP为他们提供方法的interception（拦截）。CGLIB包的底层是通过使用一个小而快的字节码处理框架ASM，来转换字节码并生成新的类。
+
+除了CGLIB包，脚本语言例如Groovy和BeanShell，也是使用ASM来生成java的字节码。当然不鼓励直接使用ASM，因为它要求你必须对JVM内部结构包括class文件的格式和指令集都很熟悉。
+
+#### 3.2.2 例子
+
+**业务类：**
+
+~~~java
+package com.lanhuigu.spring.proxy.cglib;
+ 
+public class HelloService {
+ 
+    public HelloService() {
+        System.out.println("HelloService构造");
+    }
+ 
+    /**
+     * 该方法不能被子类覆盖,Cglib是无法代理final修饰的方法的
+     */
+    final public String sayOthers(String name) {
+        System.out.println("HelloService:sayOthers>>"+name);
+        return null;
+    }
+ 
+    public void sayHello() {
+        System.out.println("HelloService:sayHello");
+    }
+}
+~~~
+
+**自定义MethodInterceptor：**
+
+~~~java
+package com.lanhuigu.spring.proxy.cglib;
+ 
+import net.sf.cglib.proxy.MethodInterceptor;
+import net.sf.cglib.proxy.MethodProxy;
+ 
+import java.lang.reflect.Method;
+ 
+/**
+ * 自定义MethodInterceptor
+ */
+public class MyMethodInterceptor implements MethodInterceptor{
+ 
+    /**
+     * sub：cglib生成的代理对象
+     * method：被代理对象方法
+     * objects：方法入参
+     * methodProxy: 代理方法
+     */
+    @Override
+    public Object intercept(Object sub, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
+        System.out.println("======插入前置通知======");
+        Object object = methodProxy.invokeSuper(sub, objects);
+        System.out.println("======插入后者通知======");
+        return object;
+    }
+}
+~~~
+
+**生成CGLIB代理对象调用目标方法：**
+
+~~~java
+package com.lanhuigu.spring.proxy.cglib;
+ 
+import net.sf.cglib.core.DebuggingClassWriter;
+import net.sf.cglib.proxy.Enhancer;
+ 
+public class Client {
+    public static void main(String[] args) {
+        // 代理类class文件存入本地磁盘方便我们反编译查看源码
+        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY, "D:\\code");
+        // 通过CGLIB动态代理获取代理对象的过程
+        Enhancer enhancer = new Enhancer();
+        // 设置enhancer对象的父类
+        enhancer.setSuperclass(HelloService.class);
+        // 设置enhancer的回调对象
+        enhancer.setCallback(new MyMethodInterceptor());
+        // 创建代理对象
+        HelloService proxy= (HelloService)enhancer.create();
+        // 通过代理对象调用目标方法
+        proxy.sayHello();
+    }
+}
+~~~
 
