@@ -462,6 +462,10 @@ public class Demo {
 > **注意：**
 >
 > 使用注解 @Component 配置后相当于配置 Bean 标签，要想要获得实例化对象，使用 getBean 时将对应类名的第一个字母小写即可
+>
+> SpringAOP 默认的代理模式为 JDK 动态代理，可以通过上述的方式设置为 Cglib 方式。
+>
+> 主要针对 Spring 中注册过的 Bean。
 
 ## 总结
 
