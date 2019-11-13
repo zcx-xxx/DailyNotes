@@ -1,0 +1,133 @@
+573  [main] DEBUG com.zcx.mapper.FolwerMapper.stu  - ==>  Preparing: select * from students 
+612  [main] DEBUG com.zcx.mapper.FolwerMapper.stu  - ==> Parameters: 
+645  [main] DEBUG com.zcx.mapper.FolwerMapper.stu  - <==      Total: 40
+394  [main] DEBUG com.zcx.mapper.FolwerMapper.stu  - ==>  Preparing: select * from students 
+418  [main] DEBUG com.zcx.mapper.FolwerMapper.stu  - ==> Parameters: 
+444  [main] DEBUG com.zcx.mapper.FolwerMapper.stu  - <==      Total: 40
+417  [main] DEBUG com.zcx.mapper.StudentsMapper.stu  - ==>  Preparing: select * from students 
+444  [main] DEBUG com.zcx.mapper.StudentsMapper.stu  - ==> Parameters: 
+473  [main] DEBUG com.zcx.mapper.StudentsMapper.stu  - <==      Total: 40
+581  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==>  Preparing: select * from students 
+616  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==> Parameters: 
+632  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - <==      Total: 40
+528  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==>  Preparing: select * from students where id=28 
+567  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==> Parameters: 
+606  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - <==      Total: 1
+606  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==>  Preparing: select * from students 
+606  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==> Parameters: 
+606  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - <==      Total: 40
+495  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==>  Preparing: select * from students where id=28 
+521  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==> Parameters: 
+536  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - <==      Total: 1
+536  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==>  Preparing: select * from students 
+536  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==> Parameters: 
+558  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - <==      Total: 40
+559  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==>  Preparing: insert into students values(default, "zcxhaha", 20, "男") 
+559  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==> Parameters: 
+570  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - <==    Updates: 1
+450  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==>  Preparing: select * from students where id=28 
+539  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==> Parameters: 
+554  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - <==      Total: 1
+554  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==>  Preparing: select * from students 
+554  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==> Parameters: 
+570  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - <==      Total: 40
+570  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==>  Preparing: insert into students values(null, "zcxhaha", 20, "男") 
+570  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==> Parameters: 
+570  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - <==    Updates: 1
+456  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==>  Preparing: select * from students where id=28 
+537  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==> Parameters: 
+553  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - <==      Total: 1
+553  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==>  Preparing: select * from students 
+553  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==> Parameters: 
+569  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - <==      Total: 40
+569  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==>  Preparing: insert into students values(null, "zcxhaha", 20, "男") 
+569  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==> Parameters: 
+569  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - <==    Updates: 1
+446  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==>  Preparing: select * from students where id=28 
+481  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==> Parameters: 
+496  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - <==      Total: 1
+496  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==>  Preparing: select * from students 
+496  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==> Parameters: 
+496  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - <==      Total: 40
+496  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==>  Preparing: insert into students values(null, 'zcxhaha', 20, '男') 
+496  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==> Parameters: 
+496  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - <==    Updates: 1
+452  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==>  Preparing: select * from students where id=28 
+484  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==> Parameters: 
+500  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - <==      Total: 1
+500  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==>  Preparing: select * from students 
+500  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==> Parameters: 
+500  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - <==      Total: 40
+500  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==>  Preparing: insert into students values(default,'zcxhaha',20,'男') 
+500  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==> Parameters: 
+515  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - <==    Updates: 1
+559  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==>  Preparing: select * from students where id=28 
+654  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==> Parameters: 
+666  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - <==      Total: 1
+678  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==>  Preparing: select * from students 
+679  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==> Parameters: 
+689  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - <==      Total: 40
+690  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==>  Preparing: insert into students values(default,'zcxhaha',20,'男') 
+692  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==> Parameters: 
+696  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - <==    Updates: 1
+545  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==>  Preparing: select * from students where id=28 
+610  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==> Parameters: 
+625  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - <==      Total: 1
+625  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==>  Preparing: select * from students 
+625  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==> Parameters: 
+658  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - <==      Total: 40
+658  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==>  Preparing: insert into students values(null,'zcxhaha',20,'男') 
+658  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==> Parameters: 
+658  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - <==    Updates: 1
+658  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==>  Preparing: select * from students where id=28 
+685  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==> Parameters: 
+743  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - <==      Total: 1
+743  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==>  Preparing: select * from students 
+743  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==> Parameters: 
+759  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - <==      Total: 40
+759  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==>  Preparing: insert into students values(null,'zcxhaha',20,'男') 
+759  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==> Parameters: 
+766  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - <==    Updates: 1
+514  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==>  Preparing: select * from students where id=28 
+541  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==> Parameters: 
+556  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - <==      Total: 1
+556  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==>  Preparing: select * from students 
+556  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==> Parameters: 
+556  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - <==      Total: 41
+556  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==>  Preparing: insert into students values(null,'zcxhaha',20,'男') 
+556  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==> Parameters: 
+572  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - <==    Updates: 1
+572  [main] DEBUG com.zcx.mapper.StudentsMapper.update  - ==>  Preparing: update students set name='zcxlala' where id=28 
+572  [main] DEBUG com.zcx.mapper.StudentsMapper.update  - ==> Parameters: 
+583  [main] DEBUG com.zcx.mapper.StudentsMapper.update  - <==    Updates: 1
+583  [main] DEBUG com.zcx.mapper.StudentsMapper.delete  - ==>  Preparing: delete students where id=61 
+583  [main] DEBUG com.zcx.mapper.StudentsMapper.delete  - ==> Parameters: 
+481  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==>  Preparing: select * from students where id=28 
+515  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - ==> Parameters: 
+531  [main] DEBUG com.zcx.mapper.StudentsMapper.selOne  - <==      Total: 1
+531  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==>  Preparing: select * from students 
+531  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - ==> Parameters: 
+531  [main] DEBUG com.zcx.mapper.StudentsMapper.selAll  - <==      Total: 41
+531  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==>  Preparing: insert into students values(null,'zcxhaha',20,'男') 
+531  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - ==> Parameters: 
+531  [main] DEBUG com.zcx.mapper.StudentsMapper.insert  - <==    Updates: 1
+531  [main] DEBUG com.zcx.mapper.StudentsMapper.update  - ==>  Preparing: update students set name='zcxlala' where id=28 
+531  [main] DEBUG com.zcx.mapper.StudentsMapper.update  - ==> Parameters: 
+531  [main] DEBUG com.zcx.mapper.StudentsMapper.update  - <==    Updates: 1
+531  [main] DEBUG com.zcx.mapper.StudentsMapper.delete  - ==>  Preparing: delete from students where id=61 
+531  [main] DEBUG com.zcx.mapper.StudentsMapper.delete  - ==> Parameters: 
+546  [main] DEBUG com.zcx.mapper.StudentsMapper.delete  - <==    Updates: 1
+657  [main] DEBUG com.zcx.mapper.StudentsMapper.self  - ==>  Preparing: select * from students where id = ? and name = ? 
+709  [main] DEBUG com.zcx.mapper.StudentsMapper.self  - ==> Parameters: 22(Integer), zcx01(String)
+755  [main] DEBUG com.zcx.mapper.StudentsMapper.self  - <==      Total: 1
+513  [main] DEBUG com.zcx.mapper.StudentsMapper.self  - ==>  Preparing: select * from students where id = ? and name = ? 
+551  [main] DEBUG com.zcx.mapper.StudentsMapper.self  - ==> Parameters: 22(Integer), zcx01(String)
+568  [main] DEBUG com.zcx.mapper.StudentsMapper.self  - <==      Total: 1
+569  [main] DEBUG com.zcx.mapper.StudentsMapper.insf  - ==>  Preparing: insert into students values(default, ?, ?, ?) 
+570  [main] DEBUG com.zcx.mapper.StudentsMapper.insf  - ==> Parameters: gl(String), null, 女(String)
+486  [main] DEBUG com.zcx.mapper.StudentsMapper.self  - ==>  Preparing: select * from students where id = ? and name = ? 
+510  [main] DEBUG com.zcx.mapper.StudentsMapper.self  - ==> Parameters: 22(Integer), zcx01(String)
+528  [main] DEBUG com.zcx.mapper.StudentsMapper.self  - <==      Total: 1
+529  [main] DEBUG com.zcx.mapper.StudentsMapper.insf  - ==>  Preparing: insert into students values(default, ?, ?, ?) 
+529  [main] DEBUG com.zcx.mapper.StudentsMapper.insf  - ==> Parameters: gl(String), 21(String), 女(String)
+541  [main] DEBUG com.zcx.mapper.StudentsMapper.insf  - <==    Updates: 1

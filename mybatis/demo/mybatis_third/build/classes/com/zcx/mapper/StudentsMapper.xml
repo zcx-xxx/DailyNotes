@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 不是必须为类的全限定名,只要是能够保证不重复即可 -->
+<mapper namespace="com.zcx.mapper.StudentsMapper">
+	<!-- 单表无参数的查询操作 -->
+	<!-- 查询一条数据 -->
+	<select id="selOne" resultType="Student">
+		select * from students where id=28
+	</select>
+	<!-- 查询多条数据 -->
+	<select id="selAll" resultType="Student">
+		select * from students
+	</select>
+	
+	<insert id="insert">
+		insert into students values(null,'zcxhaha',20,'男')
+	</insert>
+	<update id="update">
+		update students set name='zcxlala' where id=28
+	</update>
+	<delete id="delete">
+		delete from students where id=61
+	</delete>
+	
+	<!-- 单表有参数的数据查询操作 -->
+	<!-- 
+		如果查询的过程中涉及到多个参数，可以将多个参数封装为一个对象或者 Map，直接使用 #{属性名|键值}来访问相应的参数
+	 	在 paramType 中声明传递的参数类型
+	 	如果只涉及一个参数，也可以进行直接传递，不过还是觉得直接封装对象传递较为方便
+	 -->
+	<select id="self" resultType="Student" parameterType="Student">
+		select * from students where id = #{id} and name = #{name}
+	</select>
+	
+	<!-- 单表有参数的数据插入操作 -->
+	<select id="insf" parameterType="Map">
+		insert into students values(default, #{name}, #{age}, #{sex})
+	</select>
+</mapper>

@@ -40,7 +40,13 @@ public class MyCon {
 				</mvc:interceptor>		
 			</mvc:interceptors>
 	 * 三、使用单拦截器时的执行顺序
-	 * 	DispatcherServlet -->拦截器 ---> preHandler ---> 单元方法 ---> 拦截器 ---> postHandle ---> afterCompletion
+	 * 	DispatcherServlet -->拦截器 ---> preHandle ---> 单元方法 ---> 拦截器 ---> postHandle ---> afterCompletion
+	 * 四、支持多重的拦截器：
+	 * 	配置在前边的拦截器为外层拦截器，配置在后边的拦截器为内层拦截器，执行顺序为：
+	 * 		外层 preHandle，内层的 preHandle，
+	 * 		单元方法
+	 * 		内层的 postHandle，外层的 postHandle
+	 * 		内层的 afterCompletion，外层的 afterCompletion
 	 */
 	@RequestMapping("demo")
 	public String demo(String name, String pwd) {

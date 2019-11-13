@@ -1,0 +1,12 @@
+573  [main] DEBUG com.zcx.mapper.FolwerMapper.stu  - ==>  Preparing: select * from students 
+612  [main] DEBUG com.zcx.mapper.FolwerMapper.stu  - ==> Parameters: 
+645  [main] DEBUG com.zcx.mapper.FolwerMapper.stu  - <==      Total: 40
+394  [main] DEBUG com.zcx.mapper.FolwerMapper.stu  - ==>  Preparing: select * from students 
+418  [main] DEBUG com.zcx.mapper.FolwerMapper.stu  - ==> Parameters: 
+444  [main] DEBUG com.zcx.mapper.FolwerMapper.stu  - <==      Total: 40
+417  [main] DEBUG com.zcx.mapper.StudentsMapper.stu  - ==>  Preparing: select * from students 
+444  [main] DEBUG com.zcx.mapper.StudentsMapper.stu  - ==> Parameters: 
+473  [main] DEBUG com.zcx.mapper.StudentsMapper.stu  - <==      Total: 40
+519  [main] DEBUG com.zcx.mapper.StudentsMapper.stu  - ==>  Preparing: select * from students 
+554  [main] DEBUG com.zcx.mapper.StudentsMapper.stu  - ==> Parameters: 
+585  [main] DEBUG com.zcx.mapper.StudentsMapper.stu  - <==      Total: 40

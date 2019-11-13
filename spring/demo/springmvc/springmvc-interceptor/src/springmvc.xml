@@ -47,7 +47,7 @@
 		<!-- 配置拦截器 拦截范围 -->
 		<mvc:interceptors>
 			<!-- 配置全局的拦截器 ,拦截所有的单元方法-->
-<!-- 			<bean id="myq" class="com.zcx.interceptor.MyInterceptor"></bean>  -->
+			<bean id="myq" class="com.zcx.interceptor.MyInterceptor2"></bean> 
 			
 			<!-- 配置指定的拦截器，拦截指定的单元方法 -->
 			<mvc:interceptor>

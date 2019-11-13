@@ -33,7 +33,7 @@ public class MyInterceptor implements HandlerInterceptor{
 	@Override
 	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
 			throws Exception {
-		System.out.println("3");
+		System.out.println("3-----");
 	}
 
 	/**
@@ -45,8 +45,9 @@ public class MyInterceptor implements HandlerInterceptor{
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
-		modelAndView.setViewName("forward:/jsp/error.jsp");
-		System.out.println(modelAndView.getViewName());
+//		modelAndView.setViewName("forward:/jsp/error.jsp");
+//		System.out.println(modelAndView.getViewName());
+		System.out.println("2-----");
 	}
 
 	/**
@@ -57,8 +58,9 @@ public class MyInterceptor implements HandlerInterceptor{
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
-		HandlerMethod hm = (HandlerMethod)handler;
-		hm.getMethod().invoke(myCon, "zs", "123");
+//		HandlerMethod hm = (HandlerMethod)handler;
+//		hm.getMethod().invoke(myCon, "zs", "123");
+		System.out.println("1-----");
 		return true;
 	}
 }

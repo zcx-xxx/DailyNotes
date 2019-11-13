@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 不是必须为类的全限定名,只要是能够保证不重复即可 -->
+<mapper namespace="com.zcx.mapper.StudentsMapper">
+	<!-- 配置 sql 资源
+		查询: select 标签
+			属性:id 唯一标识一个 SQL 语句参数
+			resultType:声明使用哪一个实体类存储查询结果,一条结果对应一个实体类对象的存储
+			parameterType:声明实参的类型
+		增加:insert 标签
+		修改:update 标签
+		删除:delete 标签
+		
+		同一个文件内的属性的 id 值不能重复
+	-->
+	<select id="stu" resultType="Student">
+		select * from students
+	</select>
+</mapper>
