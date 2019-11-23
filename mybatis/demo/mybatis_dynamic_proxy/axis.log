@@ -1,0 +1,210 @@
+1008 [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+1035 [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+1055 [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+494  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+520  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+537  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+675  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+730  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+767  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+768  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+768  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+771  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+480  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+508  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+533  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+536  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+537  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+539  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+540  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+540  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+542  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+562  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+657  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+688  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+691  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+692  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+694  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+694  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+695  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+696  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+619  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+667  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+939  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+944  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+946  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+967  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+968  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+969  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+970  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+460  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+498  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+540  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+542  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+543  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+544  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+545  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+545  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+547  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+437  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+463  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+486  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+489  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+490  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+492  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+493  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+493  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+495  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+496  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==>  Preparing: select * from students where id = ? and name = ? 
+496  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==> Parameters: 28(Integer), zcxlala(String)
+498  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - <==      Total: 1
+434  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+458  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+483  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+486  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+486  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+488  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+489  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+489  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+490  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+446  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+469  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+493  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+495  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+496  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+497  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+497  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+498  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+499  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+819  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+872  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+912  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+915  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+929  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+930  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+931  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+931  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+932  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+933  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==>  Preparing: select * from students where id=? and name=? 
+934  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==> Parameters: 28(Integer), zcxlala(String)
+935  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - <==      Total: 1
+609  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+725  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+749  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+752  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+753  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+755  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+756  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+756  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+758  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+643  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+727  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+763  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+767  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+768  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+770  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+770  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+771  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+773  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+558  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+589  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+615  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+622  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+623  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+629  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+630  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+631  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+636  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+666  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+711  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+743  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+747  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+748  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+753  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+754  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+754  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+755  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+756  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==>  Preparing: select * from students where id = ? 
+756  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==> Parameters: 28(Integer)
+758  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - <==      Total: 1
+678  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+707  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+734  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+738  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+738  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+742  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+743  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+744  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+746  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+748  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==>  Preparing: select * from students where name = ? 
+749  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==> Parameters: zcxlala(String)
+751  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - <==      Total: 1
+604  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+634  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+667  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+670  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+671  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+675  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+677  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+678  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+681  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+503  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+529  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+565  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+568  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+570  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+574  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+575  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+576  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+577  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+577  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+639  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+689  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+692  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+692  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+694  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+694  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+695  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+696  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+697  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==>  Preparing: select * from students where id=? and age=? 
+698  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==> Parameters: 28(Integer), 11(Integer)
+700  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - <==      Total: 1
+700  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg2  - ==>  Preparing: select * from students where id=? and age=? 
+701  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg2  - ==> Parameters: 29(Integer), 8(Integer)
+703  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg2  - <==      Total: 1
+682  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+732  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+801  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+804  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+804  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+806  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+807  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+808  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+810  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+811  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==>  Preparing: select * from students where id=? and age=? 
+812  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==> Parameters: 28(Integer), 11(Integer)
+814  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - <==      Total: 1
+814  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg2  - ==>  Preparing: select * from students where id=? and age=? 
+815  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg2  - ==> Parameters: 29(Integer), 8(Integer)
+817  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg2  - <==      Total: 1
+822  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseAnnotation  - ==>  Preparing: select * from students where id=? and age=? 
+824  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseAnnotation  - ==> Parameters: 29(Integer), 8(Integer)
+825  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseAnnotation  - <==      Total: 1
+500  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==>  Preparing: select * from students 
+527  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - ==> Parameters: 
+558  [main] DEBUG com.zcx.mapper.StudentsMapper.queryAllStudents  - <==      Total: 42
+564  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==>  Preparing: select * from students where id = ? 
+566  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - ==> Parameters: 22(Integer)
+568  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById  - <==      Total: 1
+569  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==>  Preparing: select * from students where id = ? 
+569  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - ==> Parameters: 29(Integer)
+571  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentById2  - <==      Total: 1
+573  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==>  Preparing: select * from students where id=? and age=? 
+574  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - ==> Parameters: 28(Integer), 11(Integer)
+575  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg  - <==      Total: 1
+576  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg2  - ==>  Preparing: select * from students where id=? and age=? 
+576  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg2  - ==> Parameters: 29(Integer), 8(Integer)
+578  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByMultiArg2  - <==      Total: 1
+584  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseAnnotation  - ==>  Preparing: select * from students where id=? and age=? 
+585  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseAnnotation  - ==> Parameters: 29(Integer), 8(Integer)
+587  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseAnnotation  - <==      Total: 1

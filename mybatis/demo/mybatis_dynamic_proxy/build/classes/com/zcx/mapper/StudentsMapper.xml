@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 不是必须为类的全限定名,只要是能够保证不重复即可 -->
+<mapper namespace="com.zcx.mapper.StudentsMapper">
+
+<!-- 无参数 -->
+	<select id="queryAllStudents" resultType="student">
+		select * from students
+	</select>
+
+<!-- 单参数 -->
+	<!-- 单个基本类型的参数：
+		1. 直接使用角标的形式访问参数
+			select * from students where id = #{arg0}
+		2. 使用 param1、param2 ... param[n] 代替，如下：
+			select * from students where id = #{param1}
+	 -->
+	<select id="queryStudentById" resultType="student">
+		select * from students where id = #{param1}
+	</select>
+	<!-- 对于引用类型的单个参数可以直接使用属性名访问参数的属性 -->
+	<select id="queryStudentById2" resultType="student">
+		select * from students where id = #{id}
+	</select>
+
+<!-- 多个参数的查询 -->
+	<!-- 多个基本类型的参数：
+		1. 直接使用角标的形式访问参数，由于版本的问题，需要写成如下格式：
+			select * from students where id = #{arg0} and name = #{arg1}
+		2. 使用 param0、param1 ... param[n] 代替，如下：
+			select * from students where id = #{param1} and name = #{param2}
+	 -->
+	<select id="queryStudentByMultiArg" resultType="student">
+		select * from students where id=#{param1} and age=#{param2}
+	</select>
+	<!-- 基本类型的参数和引用类型的参数混用:
+		param[n].attrName 的方式
+	 -->
+	<select id="queryStudentByMultiArg2" resultType="student">
+		select * from students where id=#{param1} and age=#{param2.age}
+	</select>
+
+<!-- 注解的使用 -->
+	<select id="queryStudentUseAnnotation" resultType="student">
+		select * from students where id=#{id} and age=#{stu.age}
+	</select>
+</mapper>
