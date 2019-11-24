@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 不是必须为类的全限定名,只要是能够保证不重复即可 -->
+<mapper namespace="com.zcx.mapper.StudentsMapper">
+	<!-- if 标签的使用 ：
+		在动态  SQL 中所做的最通用的事情是包含部分 where 字句的条件。
+	-->
+	<select id="queryStudentByNameAndId" resultType="student">
+		select * from students where 1=1
+		<if test="param1 != '' and param1 != null">
+			and id=#{param1}
+		</if>
+		<if test="param2 != '' and param2 != null">
+			and name like #{param2}
+		</if>
+	</select>
+	
+	<!-- 加入 where 标签：
+		不需要加 where 1=1 了，where 标签会自动去掉满足的所有的标签中的第一个 and 或者  or，上述的代码可以改写为如下：
+		其中 where 标签中最常用的子标签为 if 或者 choose
+	 -->
+	<select id="queryStudentByNameAndId2" resultType="student">
+		select * from students
+		<where>
+			<if test="param1 != '' and param1 != null">
+				and id=#{param1}
+			</if>
+			<if test="param2 != '' and param2 != null">
+				and name like #{param2}
+			</if>
+		</where>
+	</select>
+	
+	<!-- choose, when, otherwise 的使用：
+		有时我们不想应用所有的条件, 相反我们想选择很多情况下的一种。 Java 中的 switch 和 语句相似,MyBatis 提供 choose 元素。
+		当有多个条件时，按照 when 标签的顺序进行判断，只要满足一个即可，不会再匹配接下来的条件
+		如下示例效果：
+			1. 两个条件都提供，满足按第一个算
+			2. 之提供其中一个，按提供的算
+			3. 两个都不提供，返回指定 id 的学生
+	 -->
+	<select id="queryStudentUseChoose" resultType="student">
+		select * from students
+		<where>
+			<choose>
+				<when test="param1 != '' and param1 != null">
+					and id=#{param1}
+				</when>
+				<when test="param2 != '' and param2 != null">
+					and name=#{param2}
+				</when>
+				<otherwise>
+					and id=22
+				</otherwise>
+			</choose>
+		</where>
+	</select>
+	
+	<!-- set 关键字的使用：
+		会自动生 set 关键字，并且去掉所匹配的内容中的最后一个逗号(如果没有则不去。。。)
+	 -->
+	<update id="updateStudentById">
+	 	update students 
+	 	<set>
+	 		id = #{param2},
+	 		<if test="param1 != '' and param1 != null">
+	 			name = #{param1},
+	 		</if>
+	 	</set>
+	 	where id = #{param2}
+	</update>
+	 
+	<!-- trim 标签的使用：
+	格式：
+	 	<trim prefix="" suffix="" prefixOverrides="" suffixOverrides="">
+	  		...
+	  	</trim>
+	 解释：
+	 	prefix：在匹配的结果中添加前缀
+	 	suffix：在匹配的结果中添加后缀
+	 	prefixOverrides：覆盖指定的前缀
+	 	suffixOverrides：覆盖指定的后缀
+	-->
+	  
+	<!-- forEach 标签的使用：通常与 in 关键字联合使用，构造动态的 SQL 语句
+		你可以传递一个 List 实例或者数组作为参数对象传给 MyBatis。MyBatis 会自动将它包装在一个 Map 中,
+		用名称作为键。List 实例将会以“list” 作为键,而数组实例将会以“array”作为键。 
+	-->
+	<select id="queryUseIn" resultType="student">
+		select * from students where id in
+		<foreach item="item" index="index" collection="list" open="(" separator="," close=")">
+			#{item}
+		</foreach>
+	</select>
+	
+	<!-- bind 标签的使用：
+		对参数进行重新的赋值，常与 like 关键字一起使用，实现模糊查询
+	 -->
+	<select id="queryUseBind" resultType="student">
+		<bind name="name" value="'%' + param1 + '%'"/>
+		select * from students where name like #{name}
+	</select>
+	 
+</mapper>

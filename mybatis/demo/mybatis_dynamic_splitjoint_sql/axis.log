@@ -1,0 +1,148 @@
+842  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from where 1=1 and id=param1 and name like param2 
+877  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 
+509  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from where 1=1 and id=param1 and name like param2 
+547  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 
+471  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=param1 and name like param2 
+497  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 
+446  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+471  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+489  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+467  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+491  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+509  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+511  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==>  Preparing: select * from students WHERE name like ? 
+511  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==> Parameters: zcxlala(String)
+513  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - <==      Total: 1
+473  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+498  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+515  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+516  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==>  Preparing: select * from students WHERE name like ? 
+517  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==> Parameters: zcxlala(String)
+520  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - <==      Total: 1
+520  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==>  Preparing: select * from students WHERE name=? 
+521  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==> Parameters: zcxlala(String)
+522  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - <==      Total: 1
+495  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+528  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+548  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+550  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==>  Preparing: select * from students WHERE name like ? 
+551  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==> Parameters: zcxlala(String)
+553  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - <==      Total: 1
+554  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==>  Preparing: select * from students WHERE id=? 
+555  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==> Parameters: 28(Integer)
+557  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - <==      Total: 1
+445  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+470  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+486  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+487  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==>  Preparing: select * from students WHERE name like ? 
+489  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==> Parameters: zcxlala(String)
+491  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - <==      Total: 1
+491  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==>  Preparing: select * from students WHERE 1=1 
+492  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==> Parameters: 
+500  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - <==      Total: 42
+532  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+562  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+578  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+579  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==>  Preparing: select * from students WHERE name like ? 
+580  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==> Parameters: zcxlala(String)
+582  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - <==      Total: 1
+583  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==>  Preparing: select * from students WHERE id=22 
+584  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==> Parameters: 
+585  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - <==      Total: 1
+548  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+628  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+660  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+662  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==>  Preparing: select * from students WHERE name like ? 
+663  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==> Parameters: zcxlala(String)
+665  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - <==      Total: 1
+668  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==>  Preparing: select * from students WHERE id=22 
+669  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==> Parameters: 
+673  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - <==      Total: 1
+675  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==>  Preparing: update students SET id = ?, name = ? where id = ? 
+675  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==> Parameters: 22(Integer), zcxkaka(String), 22(Integer)
+697  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - <==    Updates: 1
+496  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+522  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+542  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+543  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==>  Preparing: select * from students WHERE name like ? 
+543  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==> Parameters: zcxlala(String)
+545  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - <==      Total: 1
+546  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==>  Preparing: select * from students WHERE id=22 
+546  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==> Parameters: 
+549  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - <==      Total: 1
+549  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==>  Preparing: update students SET id = ?, name = ? where id = ? 
+550  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==> Parameters: 22(Integer), zcxkaka(String), 22(Integer)
+552  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - <==    Updates: 1
+565  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+593  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+612  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+613  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==>  Preparing: select * from students WHERE name like ? 
+614  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==> Parameters: zcxlala(String)
+625  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - <==      Total: 1
+626  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==>  Preparing: select * from students WHERE id=22 
+627  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==> Parameters: 
+630  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - <==      Total: 1
+630  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==>  Preparing: update students SET id = ? where id = ? 
+631  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==> Parameters: 22(Integer), 22(Integer)
+632  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - <==    Updates: 1
+520  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+601  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+628  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+630  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==>  Preparing: select * from students WHERE name like ? 
+630  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==> Parameters: zcxlala(String)
+633  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - <==      Total: 1
+634  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==>  Preparing: select * from students WHERE id=22 
+634  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==> Parameters: 
+637  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - <==      Total: 1
+638  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==>  Preparing: update students SET id = ?, name = ? where id = ? 
+639  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==> Parameters: 22(Integer), zcxkaka(String), 22(Integer)
+647  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - <==    Updates: 1
+654  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseIn  - ==>  Preparing: select * from students where in ( ? , ? , ? , ? ) 
+655  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseIn  - ==> Parameters: 26(Integer), 30(Integer), 33(Integer), 28(Integer)
+692  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+724  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+744  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+745  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==>  Preparing: select * from students WHERE name like ? 
+746  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==> Parameters: zcxlala(String)
+748  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - <==      Total: 1
+749  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==>  Preparing: select * from students WHERE id=22 
+749  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==> Parameters: 
+753  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - <==      Total: 1
+754  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==>  Preparing: update students SET id = ?, name = ? where id = ? 
+755  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==> Parameters: 22(Integer), zcxkaka(String), 22(Integer)
+760  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - <==    Updates: 1
+764  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseIn  - ==>  Preparing: select * from students where in ( ? , ? , ? , ? ) 
+765  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseIn  - ==> Parameters: 26(Integer), 30(Integer), 33(Integer), 28(Integer)
+512  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+537  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+554  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+556  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==>  Preparing: select * from students WHERE name like ? 
+556  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==> Parameters: zcxlala(String)
+560  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - <==      Total: 1
+561  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==>  Preparing: select * from students WHERE id=22 
+562  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==> Parameters: 
+563  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - <==      Total: 1
+564  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==>  Preparing: update students SET id = ?, name = ? where id = ? 
+565  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==> Parameters: 22(Integer), zcxkaka(String), 22(Integer)
+568  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - <==    Updates: 1
+572  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseIn  - ==>  Preparing: select * from students where id in ( ? , ? , ? , ? ) 
+572  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseIn  - ==> Parameters: 26(Integer), 30(Integer), 33(Integer), 28(Integer)
+579  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseIn  - <==      Total: 4
+479  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==>  Preparing: select * from students where 1=1 and id=? and name like ? 
+506  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - ==> Parameters: 28(Integer), zcxlala(String)
+532  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId  - <==      Total: 1
+533  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==>  Preparing: select * from students WHERE name like ? 
+533  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - ==> Parameters: zcxlala(String)
+539  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentByNameAndId2  - <==      Total: 1
+541  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==>  Preparing: select * from students WHERE id=22 
+542  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - ==> Parameters: 
+545  [main] DEBUG com.zcx.mapper.StudentsMapper.queryStudentUseChoose  - <==      Total: 1
+546  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==>  Preparing: update students SET id = ?, name = ? where id = ? 
+547  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - ==> Parameters: 22(Integer), zcxkaka(String), 22(Integer)
+549  [main] DEBUG com.zcx.mapper.StudentsMapper.updateStudentById  - <==    Updates: 1
+553  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseIn  - ==>  Preparing: select * from students where id in ( ? , ? , ? , ? ) 
+554  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseIn  - ==> Parameters: 26(Integer), 30(Integer), 33(Integer), 28(Integer)
+557  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseIn  - <==      Total: 4
+562  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseBind  - ==>  Preparing: select * from students where name like ? 
+564  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseBind  - ==> Parameters: %zcx%(String)
+576  [main] DEBUG com.zcx.mapper.StudentsMapper.queryUseBind  - <==      Total: 41
