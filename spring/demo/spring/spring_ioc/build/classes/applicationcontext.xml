@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	    https://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 声明 spring 要帮我们创建的对象 -->
+		<!-- 构造器方式 -->
+			<!-- 默认走的是无参的构造器 -->
+			<bean id="stu" class="com.zcx.pojo.Student"></bean>
+			
+			<!-- 有参构造器 
+				使用 constructor-arg 标签声明构造器的参数
+				index:参数的索引
+				name:参数名
+				type:参数类型
+				value:参数值
+			-->
+			<bean id="stu2" class="com.zcx.pojo.Student">
+				<constructor-arg index="0" name="id" type="Integer" value="1"></constructor-arg>
+				<constructor-arg index="1" name="name" type="String" value="zcx"></constructor-arg>
+				<constructor-arg index="2" name="age" type="Integer" value="18"></constructor-arg>
+				<constructor-arg index="3" name="sex" type="String" value="man"></constructor-arg>
+			</bean>
+		
+		<!-- 工厂模式 -->
+			<!-- 静态工厂
+				直接找到工厂，调用工厂方法
+			 -->
+			<bean id="stu3" class="com.zcx.factory.StudentFactory" factory-method="newInstance"></bean>
+			<!-- 动态工厂 ：
+				先找到工厂，在调用相应的方法
+			-->
+			<bean id="factory" class="com.zcx.factory.StudentFactory"></bean>
+			<bean id="stu4" class="com.zcx.pojo.Student" factory-bean="factory" factory-method="newInstance2"></bean>
+		
+		<!-- 属性注入方式 -->
+			<bean id="stu5" class="com.zcx.pojo.Student">
+				<!-- 普通属性 -->
+				<property name="id" value="1"></property>
+				<property name="name" value="zcxhaha"></property>
+				
+				<!-- 数组属性 -->
+<!-- 				<property name="strs"> -->
+<!-- 					<array> -->
+<!-- 						<value>haha</value> -->
+<!-- 						<value>lala</value> -->
+<!-- 					</array> -->
+<!-- 				</property> -->
+				
+				<!-- list 集合方式 -->
+<!-- 				<property name="ls"> -->
+<!-- 					<list> -->
+<!-- 						<value>haha</value> -->
+<!-- 						<value>lala</value> -->
+<!-- 					</list> -->
+<!-- 				</property> -->
+				
+				<!-- map 集合方式 -->
+<!-- 				<property name="ms"> -->
+<!-- 					<map> -->
+<!-- 						<entry key="zcx" value="haha"></entry> -->
+<!-- 						<entry key="zcx1" value="hahahaha"></entry> -->
+<!-- 						<entry></entry> -->
+<!-- 					</map> -->
+<!-- 				</property> -->
+			</bean>
+</beans>
