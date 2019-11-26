@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	    https://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 声明 spring 要帮我们创建的对象 -->
+		<!-- 构造器注入之依赖注入 -->
+		<bean id="tea1" class="com.zcx.pojo.Teacher">
+			<constructor-arg index="0" name="id" type="Integer" value="100"></constructor-arg>
+		</bean>
+		<bean id="stu1" class="com.zcx.pojo.Student">
+			<constructor-arg index="0" name="id" type="Integer" value="1"></constructor-arg>
+			<constructor-arg index="1" name="name" type="String" value="zcx"></constructor-arg>
+			<constructor-arg index="2" name="age" type="Integer" value="18"></constructor-arg>
+			<constructor-arg index="3" name="sex" type="String" value="man"></constructor-arg>
+			<constructor-arg index="4" name="teacher" type="com.zcx.pojo.Teacher" ref="tea1"></constructor-arg>
+		</bean>
+		
+		<!-- 属性注入之依赖注入 -->
+		<bean id="stu2" class="com.zcx.pojo.Student">
+			<property name="id" value="5"></property>
+			<property name="name" value="zcxlala"></property>
+			<property name="age" value="20"></property>
+			<property name="sex" value="man"></property>
+			<property name="teacher" ref="tea1"></property>
+		</bean>
+</beans>
