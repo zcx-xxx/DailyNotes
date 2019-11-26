@@ -1,0 +1,8 @@
+1121 [main] DEBUG com.zcx.mapper.UserMapper.queryUserByNameAndPwd  - ==>  Preparing: select * from tbl_user 
+1144 [main] DEBUG com.zcx.mapper.UserMapper.queryUserByNameAndPwd  - ==> Parameters: 
+911  [main] DEBUG com.zcx.mapper.UserMapper.queryUserByNameAndPwd  - ==>  Preparing: select * from tbl_user 
+934  [main] DEBUG com.zcx.mapper.UserMapper.queryUserByNameAndPwd  - ==> Parameters: 
+1028 [main] DEBUG com.zcx.mapper.UserMapper.queryUserByNameAndPwd  - <==      Total: 1
+1020 [main] DEBUG com.zcx.mapper.UserMapper.queryUserByNameAndPwd  - ==>  Preparing: select * from tbl_user 
+1052 [main] DEBUG com.zcx.mapper.UserMapper.queryUserByNameAndPwd  - ==> Parameters: 
+1080 [main] DEBUG com.zcx.mapper.UserMapper.queryUserByNameAndPwd  - <==      Total: 1
