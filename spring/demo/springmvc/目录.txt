@@ -4,3 +4,4 @@
 4. springmvc-viewresolver：配置自定义视图解析器
 5. springmvc-upload：实现文件的上传下载，带数据库的
 6. springmvc-inteerceptor：拦截器
+7. ssm: 框架整合
