@@ -46,7 +46,7 @@
 	    	<tx:attributes>
 	    		<tx:method name="ins*"/>
 	    		<tx:method name="up*"/>
-	    		<tx:method name="sel*"/>
+	    		<tx:method name="sel*" read-only="true"/>
 	    		<tx:method name="del*"/>
 	    	</tx:attributes>
 	    </tx:advice>
