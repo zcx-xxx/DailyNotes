@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 不是必须为类的全限定名,只要是能够保证不重复即可 -->
+<mapper namespace="com.edrop.mapper.UserMapper">
+	
+	<!-- 插入用户数据 ：手机号-->
+<!-- 	<insert id="insUserPhone"> -->
+<!-- 		insert into user values(default, #{param1}, null, null, null, null, null, null, null, #{param2}) -->
+<!-- 	</insert> -->
+	
+	<!-- 插入用户信息 -->
+	<insert id="insUserInfo">
+		insert into user values(default, #{param1}, #{param2}, #{param3}, #{param4}, #{param5}, #{param6}, #{param7}, #{param8}, #{param9}, #{param10})
+	
+<!-- 		insert into user values(default, -->
+<!-- 		<trim suffix=")" suffixOverrides=","> -->
+<!-- 			<if test="param1 != '' and param1 != null"> -->
+<!-- 	 			#{param1}, -->
+<!-- 	 		</if> -->
+<!-- 			<if test="param2 != '' and param2 != null"> -->
+<!-- 	 			#{param2}, -->
+<!-- 	 		</if> -->
+<!-- 	 		<if test="param3 != '' and param3 != null"> -->
+<!-- 	 			#{param3}, -->
+<!-- 	 		</if> -->
+<!-- 	 		<if test="param4 != '' and param4 != null"> -->
+<!-- 	 			#{param4}, -->
+<!-- 	 		</if> -->
+<!-- 	 		<if test="param5 != '' and param5 != null"> -->
+<!-- 	 			#{param5}, -->
+<!-- 	 		</if> -->
+<!-- 	 		<if test="param6 != '' and param6 != null"> -->
+<!-- 	 			#{param6}, -->
+<!-- 	 		</if> -->
+<!-- 	 		<if test="param7 != '' and param7 != null"> -->
+<!-- 	 			#{param7}, -->
+<!-- 	 		</if> -->
+<!-- 	 		<if test="param8 != '' and param8 != null"> -->
+<!-- 	 			#{param8}, -->
+<!-- 	 		</if> -->
+<!-- 	 		<if test="param9 != null"> -->
+<!-- 	 			#{param9}, -->
+<!-- 	 		</if> -->
+<!-- 	 		<if test="param10 != '' and param10 != null"> -->
+<!-- 	 			#{param10}, -->
+<!-- 	 		</if> -->
+<!-- 		</trim> -->
+	</insert>
+	
+	<!-- 跟新用户数据 -->
+	<update id="upUserInfo">
+		update user
+	 	<set>
+	 		id = #{param1},
+	 		<if test="param2 != '' and param2 != null">
+	 			phone = #{param2},
+	 		</if>
+	 		<if test="param3 != '' and param3 != null">
+	 			qq = #{param3},
+	 		</if>
+	 		<if test="param4 != '' and param4 != null">
+	 			username = #{param4},
+	 		</if>
+	 		<if test="param5 != '' and param5 != null">
+	 			password = #{param5},
+	 		</if>
+	 		<if test="param6 != '' and param6 != null">
+	 			imgpath = #{param6},
+	 		</if>
+	 		<if test="param7 != '' and param7 != null">
+	 			imgname = #{param7},
+	 		</if>
+	 		<if test="param8 != '' and param8 != null">
+	 			address = #{param8},
+	 		</if>
+	 		<if test="param9 != '' and param9 != null">
+	 			gender = #{param9},
+	 		</if>
+	 		<if test="param10 != '' and param10 != null">
+	 			detailAddress = #{param10},
+	 		</if>
+	 	</set>
+	 	where id = #{param1}
+	</update>
+<!-- 	<select id="queryUserById" resultType="com.edrop.pojo.User"> -->
+<!-- 		select * from user where id = 1 -->
+<!-- 	</select> -->
+<!-- 无参数 -->
+<!-- 	<select id="queryAllStudents" resultType="student"> -->
+<!-- 		select * from students -->
+<!-- 	</select> -->
+
+<!-- 单参数 -->
+	<!-- 单个基本类型的参数：
+		1. 直接使用角标的形式访问参数
+			select * from students where id = #{arg0}
+		2. 使用 param1、param2 ... param[n] 代替，如下：
+			select * from students where id = #{param1}
+	 -->
+<!-- 	<select id="queryStudentById" resultType="student"> -->
+<!-- 		select * from students where id = #{param1} -->
+<!-- 	</select> -->
+	<!-- 对于引用类型的单个参数可以直接使用属性名访问参数的属性 -->
+<!-- 	<select id="queryStudentById2" resultType="student"> -->
+<!-- 		select * from students where id = #{id} -->
+<!-- 	</select> -->
+
+<!-- 多个参数的查询 -->
+	<!-- 多个基本类型的参数：
+		1. 直接使用角标的形式访问参数，由于版本的问题，需要写成如下格式：
+			select * from students where id = #{arg0} and name = #{arg1}
+		2. 使用 param0、param1 ... param[n] 代替，如下：
+			select * from students where id = #{param1} and name = #{param2}
+	 -->
+<!-- 	<select id="queryStudentByMultiArg" resultType="student"> -->
+<!-- 		select * from students where id=#{param1} and age=#{param2} -->
+<!-- 	</select> -->
+	<!-- 基本类型的参数和引用类型的参数混用:
+		param[n].attrName 的方式
+	 -->
+<!-- 	<select id="queryStudentByMultiArg2" resultType="student"> -->
+<!-- 		select * from students where id=#{param1} and age=#{param2.age} -->
+<!-- 	</select> -->
+
+<!-- 注解的使用 -->
+<!-- 	<select id="queryStudentUseAnnotation" resultType="student"> -->
+<!-- 		select * from students where id=#{id} and age=#{stu.age} -->
+<!-- 	</select> -->
+</mapper>

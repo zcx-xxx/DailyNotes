@@ -8,9 +8,11 @@
  */
 package com.edrop.mapper;
 
+import java.sql.Timestamp;
+
 import org.apache.ibatis.annotations.Select;
 
-import com.edrop.pojo.DDUser;
+import com.edrop.pojo.User;
 
 /**
  * @ClassName: UserMapper
@@ -20,8 +22,25 @@ import com.edrop.pojo.DDUser;
  *
  */
 public interface UserMapper {
-	//获得用户信息
-	//使用注解的方式配置
-	@Select("select * from tbl_user where uname=#{param1} and pwd=#{param2}")
-	public DDUser getUserInfo(String uname, String pwd);
+
+	//通过用户名查询用户的信息
+	@Select("select * from user where username like #{param1}")
+	public User selUserByUsername(String username);
+	
+	//通过电话查询用户的信息
+	@Select("select * from user where phone like #{param1}")
+	public User selUserByPhone(String phone);
+
+	//通过 qq 查询用户的信息
+	@Select("select * from user where qq like #{param1}")
+	public User selUserByQq(String qq);
+	
+	//插入用户手机号
+//	public int insUserPhone(String phone, Timestamp registerTime);
+	
+	//跟新用户信息
+	public int upUserInfo(Integer id, String phone, String qq, String username, String password, String imgpath, String imgname, String address, String gender, String detailAddress);
+	
+	//插入用户数据
+	public int insUserInfo(String phone, String qq, String username, String password, String imgpath, String imgname, String address, String gender, Timestamp registerTime, String detailAddress);
 }

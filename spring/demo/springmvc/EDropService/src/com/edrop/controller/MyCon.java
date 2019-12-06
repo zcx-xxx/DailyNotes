@@ -13,8 +13,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.edrop.pojo.DDUser;
-import com.edrop.service.impl.UserService;
+import com.edrop.service.UserService;
 
 /**
  * @ClassName: MyCon
@@ -28,21 +27,22 @@ public class MyCon {
 	@Resource
 	private UserService userServiceImpl;
 	
-	@RequestMapping("login")
-	public void userLogin(String uname, String pwd) {
-		System.out.println(uname + " " + pwd);
-		DDUser user = userServiceImpl.selUserInfoService(uname, pwd);
-		
-		if(user == null) {
-			System.out.println("fail");
-		} else {
-			System.out.println("success");
-		}
-		return;
-	}
+//	@RequestMapping("login")
+//	public void userLogin(String uname, String pwd) {
+//		System.out.println(uname + " " + pwd);
+//		DDUser user = userServiceImpl.selUserInfoService(uname, pwd);
+//		
+//		if(user == null) {
+//			System.out.println("fail");
+//		} else {
+//			System.out.println("success");
+//		}
+	
+//		return;
+//	}
 	
 	@RequestMapping("hello")
 	public void hello() {
-		System.out.println("hello");
+//		System.out.println("hello");
 	}
 }

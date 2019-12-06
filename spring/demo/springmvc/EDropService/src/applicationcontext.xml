@@ -29,7 +29,9 @@
 	    </bean>
 	    
 	    <!-- 配置工厂 bean -->
-	    <bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean"></bean>
+	    <bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean">
+			<property name="typeAliasesPackage" value="com.edrop.pojo"/>
+	    </bean>
 	    
 	    <!-- 配置 mapper 扫描 bean -->
 	    <bean id="mapper" class="org.mybatis.spring.mapper.MapperScannerConfigurer">

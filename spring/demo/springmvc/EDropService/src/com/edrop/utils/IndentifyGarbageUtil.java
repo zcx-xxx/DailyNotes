@@ -27,7 +27,8 @@ import java.text.SimpleDateFormat;
  */
 public class IndentifyGarbageUtil {
 	
-	public String indentifyGarbage() {
+	public static String indentifyGarbage(File file) {
+		String res = "";
 		//API产品路径
 //      String host = "http://rubbish.market.alicloudapi.com";
       String host = "http://api.tianapi.com";
@@ -50,10 +51,11 @@ public class IndentifyGarbageUtil {
       //内容数据类型，如：0，则表示BASE64编码；1，则表示图像文件URL链接        
       //启用BASE64编码方式进行识别
       //内容数据类型是BASE64编码
-      String imgFile = "C:\\Users\\13071\\Desktop\\test6.png";
+//      String imgFile = "C:\\Users\\13071\\Desktop\\test6.png";
       String imgBase64 = "";
       try {
-          File file = new File(imgFile);
+//    	  byte[] content = picInfo.getBytes();
+//          File file = new File(img);
           byte[] content = new byte[(int) file.length()];
           FileInputStream finputstream = new FileInputStream(file);
           finputstream.read(content);
@@ -83,12 +85,14 @@ public class IndentifyGarbageUtil {
           * https://github.com/aliyun/api-gateway-demo-sign-java/blob/master/pom.xml
           */
           HttpResponse response = HttpUtil.doPost(host, path, method, headers, querys, bodys);
-          System.out.println(response.toString());
+//          System.out.println(response.toString());
           //获取response的body
-          System.out.println(EntityUtils.toString(response.getEntity()));
+//          System.out.println(EntityUtils.toString(response.getEntity()));
+          res = EntityUtils.toString(response.getEntity());
          } catch (Exception e) {
               e.printStackTrace();
-          }
-      	return null;
+         }
+      
+      	return res;
 	}
 }
