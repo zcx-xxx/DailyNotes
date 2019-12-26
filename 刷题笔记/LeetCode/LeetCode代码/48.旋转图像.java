@@ -9,31 +9,23 @@ class Solution {
             return;
         }
 
-        int len = matrix.length - 1;
-        int width = len;
-        int x, y, tmp;
-
-        //将矩阵沿左下---右上对角线翻转
-        for(int i = 0; i < len; i++){
-            for(int j = 0; j < width; j++){
-                x = len - j;
-                y = len - i;
-
-                tmp = matrix[x][y];
-                matrix[x][y] = matrix[i][j];
-                matrix[i][j] = tmp;
-            }
-            width--;
-        }
-
-        //将矩阵进行上下翻转
-        len = matrix.length / 2;
-        int hei = matrix.length - 1;
+		//首先进行左下右上的翻转，然后上下反转
+        //左下 - 右上
+        int len = matrix.length;
         for(int i = 0; i < len; ++i){
-            for(int j = 0; j < matrix.length; ++j){
-                tmp = matrix[hei - i][j];
-                matrix[hei - i][j] = matrix[i][j];
-                matrix[i][j] = tmp;
+            for(int j = 0; j < len - i; ++j){
+                int tmp = matrix[i][j];
+                matrix[i][j] = matrix[len - 1 - j][len - i - 1];
+                matrix[len - j - 1][len - i - 1] = tmp;
+            }
+        }
+        
+        //上 - 下
+        for(int i = 0, j = len - 1; i < j; ++i, --j){
+            for(int k = 0; k < len; ++k){
+                int tmp = matrix[i][k];
+                matrix[i][k] = matrix[j][k];
+                matrix[j][k] = tmp;
             }
         }
     }
