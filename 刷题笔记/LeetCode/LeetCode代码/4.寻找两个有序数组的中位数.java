@@ -160,7 +160,7 @@ class Solution {
     }
 
     /**
-     * 二分小的数组，将两个数组重新划分为两部分
+     * 方法三的二分，二分小的数组，将两个数组重新划分为两部分
      * @param smallNums 小数组
      * @param bigNums 大数组
      * @param k 找第几个元素
