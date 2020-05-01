@@ -85,9 +85,12 @@
 	 	suffixOverrides：覆盖指定的后缀
 	-->
 	  
-	<!-- forEach 标签的使用：通常与 in 关键字联合使用，构造动态的 SQL 语句
-		你可以传递一个 List 实例或者数组作为参数对象传给 MyBatis。MyBatis 会自动将它包装在一个 Map 中,
-		用名称作为键。List 实例将会以“list” 作为键,而数组实例将会以“array”作为键。 
+	<!-- forEach 标签的使用：
+		通常与 in 关键字联合使用，构造动态的 SQL 语句
+			你可以传递一个 List 实例或者数组作为参数对象传给 MyBatis。MyBatis 会自动将它包装在一个 Map 中,
+			用名称作为键。List 实例将会以“list” 作为键, 而数组实例将会以“array”作为键, Map 集合 用 _parameter 作为键；
+			也可以使用 @Param 指定参数的名字
+		实现批量插入
 	-->
 	<select id="queryUseIn" resultType="student">
 		select * from students where id in
